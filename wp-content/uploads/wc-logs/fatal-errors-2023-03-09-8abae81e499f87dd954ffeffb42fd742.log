@@ -1,0 +1,64 @@
+2023-03-09T10:07:29+00:00 CRITICAL Uncaught wfWAFStorageFileException: Unable to open /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/wflogs/config-synced.php for reading and writing. in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/vendor/wordfence/wf-waf/src/lib/storage/file.php:468
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/vendor/wordfence/wf-waf/src/lib/storage/file.php(421): wfWAFStorageFile->_open('/Applications/X...', Array, 'synced', '<?php exit('Acc...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/vendor/wordfence/wf-waf/src/lib/storage/file.php(610): wfWAFStorageFile->open('synced')
+#2 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/vendor/wordfence/wf-waf/src/lib/storage/file.php(564): wfWAFStorageFile->fetchConfigData('synced')
+#3 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/vendor/wordfence/wf-waf/src/lib/waf.php(1885): wfWAFStorageFile->getConfig('apiKey', NULL, 'synced')
+#4 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wordfenceClass.php(9262): wfWAFCronFetchRulesEvent->fire()
+#5 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wordfenceClass.php(4485): wordfence::licenseStatusChanged()
+#6 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wordfenceClass.php(1548): wordfence::ajax_installLicense_callback()
+#7 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(308): wordfence::ajaxReceiver('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-admin/admin-ajax.php(188): do_action('wp_ajax_wordfen...')
+#11 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/vendor/wordfence/wf-waf/src/lib/storage/file.php on line 468
+
+2023-03-09T10:13:24+00:00 CRITICAL Uncaught ValueError: Path cannot be empty in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php:636
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php(636): fopen('', 'r+')
+#1 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfScan.php(141): wfConfig::get_ser('wfsd_engine', false, false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wordfenceClass.php(1503): wfScan::wfScanMain()
+#3 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(308): wordfence::ajax_doScan_callback('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-admin/admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#7 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php on line 636
+
+2023-03-09T10:35:47+00:00 CRITICAL Uncaught ValueError: Path cannot be empty in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php:636
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php(636): fopen('', 'r+')
+#1 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfScan.php(141): wfConfig::get_ser('wfsd_engine', false, false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wordfenceClass.php(1503): wfScan::wfScanMain()
+#3 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(308): wordfence::ajax_doScan_callback('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-admin/admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#7 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php on line 636
+
+2023-03-09T10:42:35+00:00 CRITICAL Uncaught ValueError: Path cannot be empty in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php:636
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php(636): fopen('', 'r+')
+#1 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfScan.php(141): wfConfig::get_ser('wfsd_engine', false, false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wordfenceClass.php(1503): wfScan::wfScanMain()
+#3 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(308): wordfence::ajax_doScan_callback('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-admin/admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#7 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php on line 636
+
+2023-03-09T10:56:01+00:00 CRITICAL Uncaught ValueError: Path cannot be empty in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php:636
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php(636): fopen('', 'r+')
+#1 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfScan.php(141): wfConfig::get_ser('wfsd_engine', false, false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wordfenceClass.php(1503): wfScan::wfScanMain()
+#3 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(308): wordfence::ajax_doScan_callback('')
+#4 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-admin/admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#7 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/E-commerce/wp-content/plugins/wordfence/lib/wfConfig.php on line 636
+
